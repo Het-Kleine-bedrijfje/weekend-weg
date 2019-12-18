@@ -1,5 +1,13 @@
 # weekend-weg
+```
+DUTCH
+Website voor een weekend weg met vrienden. Gebouwd met Vue, Vuex, Router, Firebase
 
+TODO:
+- implement Firebase hosting and database
+- build website
+
+```
 ## Project setup
 ```
 npm install
@@ -27,3 +35,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+''
