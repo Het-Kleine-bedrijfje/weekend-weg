@@ -1,6 +1,12 @@
 <template>
   <span>
-    <v-navigation-drawer app v-model="drawer" class="red" dark disable-resize-watcher>
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      class="red"
+      dark
+      disable-resize-watcher
+    >
       <v-list>
         <template v-for="(item, index) in items">
           <v-list-item :key="index">
@@ -38,5 +44,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
