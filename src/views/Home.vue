@@ -12,3 +12,11 @@ export default {
   components: {}
 };
 </script>
+
+<style scoped>
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+</style>
