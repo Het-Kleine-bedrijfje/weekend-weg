@@ -1,7 +1,12 @@
 # weekend-weg
 ```
 DUTCH
-Website voor een weekend weg met vrienden. Word gedployd via Firebase in de toekomst
+Website voor een weekend weg met vrienden. Gebouwd met Vue, Vuex, Router, Firebase
+
+TODO:
+- implement Firebase hosting and database
+- build website
+
 ```
 ## Project setup
 ```
