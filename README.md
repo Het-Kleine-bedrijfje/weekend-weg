@@ -1,5 +1,8 @@
 # weekend-weg
-
+```
+DUTCH
+Website voor een weekend weg met vrienden. Word gedployd via Firebase in de toekomst
+```
 ## Project setup
 ```
 npm install
@@ -27,3 +30,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+''
