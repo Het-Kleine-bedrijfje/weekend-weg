@@ -1,12 +1,6 @@
 <template>
   <span>
-    <v-navigation-drawer
-      app
-      v-model="drawer"
-      class="red"
-      dark
-      disable-resize-watcher
-    >
+    <v-navigation-drawer app v-model="drawer" class="red" dark disable-resize-watcher>
       <v-list>
         <template v-for="(item, index) in items">
           <v-list-item :key="index">
@@ -17,16 +11,16 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app color="red" dark>
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up"
-        @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
-      <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
-      <v-btn class="hidden-sm-and-down">Menu</v-btn>
+      <router-link to="/">
+        <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
+      </router-link>
+      <v-btn class="hidden-sm-and-down" to="/menu">Menu</v-btn>
+      <v-btn class="hidden-sm-and-down" to="/about">About</v-btn>
       <v-spacer class="hidden-sm-and-down"></v-spacer>
-      <v-btn class="hidden-sm-and-down">SIGN IN</v-btn>
-      <v-btn color="brown lighten-3" class="hidden-sm-and-down">JOIN</v-btn>
+      <v-btn class="hidden-sm-and-down" to="/sign-in">SIGN IN</v-btn>
+      <v-btn color="brown lighten-3" class="hidden-sm-and-down" to="/join">JOIN</v-btn>
     </v-app-bar>
   </span>
 </template>
@@ -38,10 +32,21 @@ export default {
     return {
       appTitle: "Weekend weg",
       drawer: false,
-      items: [{ title: "Menu" }, { title: "Sign In" }, { title: "Join" }]
+      items: [
+        { title: "Menu" },
+        { title: "Sign In" },
+        { title: "Join" },
+        { title: "About" }
+      ]
     };
   }
 };
 </script>
 
-<style></style>
+<style scoped>
+
+.v-application a {
+  color: white;
+  text-decoration: none;
+}
+</style>

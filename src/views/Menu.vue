@@ -1,16 +1,15 @@
 <template>
   <v-container fluid>
-    <v-flex>
-      <h1>About Page</h1>
-    </v-flex>
+    <v-layout>
+      <h1>Menu Page</h1>
+    </v-layout>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: "About"
+  name: "Menu"
 };
-
 </script>
-<style scoped>
-</style>
+
+<style scoped></style>
