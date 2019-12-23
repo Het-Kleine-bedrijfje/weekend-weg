@@ -3,7 +3,7 @@
     <v-navigation-drawer app v-model="drawer" class="red" dark disable-resize-watcher>
       <v-list>
         <template v-for="(item, index) in items">
-          <v-list-item :key="index">
+          <v-list-item :key="index" :to="item.path">
             <v-list-item-content>{{ item.title }}</v-list-item-content>
           </v-list-item>
           <v-divider :key="`divider-${index}`"></v-divider>
@@ -16,11 +16,9 @@
       <router-link to="/">
         <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
       </router-link>
+      <v-spacer class="hidden-sm-and-down"></v-spacer>
       <v-btn class="hidden-sm-and-down" to="/menu">Menu</v-btn>
       <v-btn class="hidden-sm-and-down" to="/about">About</v-btn>
-      <v-spacer class="hidden-sm-and-down"></v-spacer>
-      <v-btn class="hidden-sm-and-down" to="/sign-in">SIGN IN</v-btn>
-      <v-btn color="brown lighten-3" class="hidden-sm-and-down" to="/join">JOIN</v-btn>
     </v-app-bar>
   </span>
 </template>
@@ -32,19 +30,13 @@ export default {
     return {
       appTitle: "Weekend weg",
       drawer: false,
-      items: [
-        { title: "Menu" },
-        { title: "Sign In" },
-        { title: "Join" },
-        { title: "About" }
-      ]
+      items: [{ title: "Menu", path: "/menu" }, { title: "About", path: "/about" }]
     };
   }
 };
 </script>
 
 <style scoped>
-
 .v-application a {
   color: white;
   text-decoration: none;

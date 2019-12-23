@@ -1,16 +1,16 @@
 <template>
   <v-container fluid>
-    <v-flex>
-      <h1>About Page</h1>
-    </v-flex>
+    <location-carousel></location-carousel>
   </v-container>
 </template>
 
 <script>
+import LocationCarousel from "@/components/LocationCarousel";
 export default {
-  name: "About"
+  name: "About",
+  components: {
+    LocationCarousel
+  }
 };
-
 </script>
-<style scoped>
-</style>
+<style scoped></style>
