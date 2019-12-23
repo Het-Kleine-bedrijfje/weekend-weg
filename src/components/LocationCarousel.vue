@@ -1,17 +1,14 @@
 <template>
-  <v-carousel hide-delimiters>
+  <v-carousel align="center" max-height="500" height="auto" width="auto" hide-delimiters>
     <v-carousel-item
       v-for="(city, i) in locations"
       :key="i"
-      :src="city.src"
-      :year="city.year"
+      transition="fade-transition"
     >
-      <v-row justify="center">
-        <div class="display-3">{{ city.name }}</div>
-      </v-row>
-      <v-row justify="center" align="center">
-        <div class="display-3">{{ city.year }}</div>
-      </v-row>
+      <v-row class=" mb-2 display-3 hidden-sm-and-down" justify="center">{{ city.year }} - {{ city.name }}</v-row>
+      <img class="hidden-sm-and-down" :src="city.src" />
+      <v-row class=" mb-2 display-1 hidden-sm-and-up" justify="center">{{ city.year }} - {{ city.name }}</v-row>
+      <img class="hidden-sm-and-up" :src="city.src" style="height:400px;width:400px" />
     </v-carousel-item>
   </v-carousel>
 </template>
@@ -53,5 +50,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
