@@ -2,11 +2,6 @@
 ```
 DUTCH
 Website voor een weekend weg met vrienden. Gebouwd met Vue, Vuex, Router, Firebase
-
-TODO:
-- implement Firebase hosting and database
-- build website
-
 ```
 ## Project setup
 ```
@@ -20,7 +15,8 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+1. npm run build
+2. firebase deploy
 ```
 
 ### Run your tests
