@@ -21,7 +21,7 @@
 
 <script>
 // @ is an alias to /src
-import AppCalendar from "@/components/AppCalendar";
+import AppCalendar from "./AppCalendar";
 
 export default {
   name: "home",

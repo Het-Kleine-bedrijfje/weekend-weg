@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import LocationCarousel from "@/components/LocationCarousel";
+import LocationCarousel from "./LocationCarousel";
 export default {
-  name: "About",
+  name: "locations",
   components: {
     LocationCarousel
   }

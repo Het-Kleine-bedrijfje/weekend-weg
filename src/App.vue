@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import AppNavigation from "@/components/AppNavigation";
-import Timer from "@/components/CountdownTimer";
+import AppNavigation from "@/shared/AppNavigation";
+import Timer from "@/shared/CountdownTimer";
 
 export default {
   name: "App",

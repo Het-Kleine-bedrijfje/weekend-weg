@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../home/Home.vue";
+import Pictures from "../pictures/CitiesPictures.vue";
+import City from "../locations/CitySelector.vue"
 
 Vue.use(VueRouter);
 
@@ -11,15 +13,15 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/About.vue")
+    path: "/pictures",
+    name: "CitiesPictures",
+    component: Pictures,
   },
   {
-    path: "/menu",
-    name: "menu",
-    component: () => import("../views/Menu.vue")
-  }
+    path: "/locations",
+    name: "CitySelector",
+    component: City,
+  },
 ];
 
 const router = new VueRouter({
