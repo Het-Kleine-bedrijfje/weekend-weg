@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../home/Home.vue";
 import Pictures from "../pictures/CitiesPictures.vue";
 import City from "../locations/CitySelector.vue"
+import TipsPage from "../tips/TipsPage.vue";
 
 Vue.use(VueRouter);
 
@@ -13,14 +14,19 @@ const routes = [
     component: Home
   },
   {
-    path: "/pictures",
+    path: "/fotos",
     name: "CitiesPictures",
     component: Pictures,
   },
   {
-    path: "/locations",
+    path: "/locaties",
     name: "CitySelector",
     component: City,
+  },
+  {
+    path: "/tips",
+    name: "Tips",
+    component: TipsPage,
   },
 ];
 

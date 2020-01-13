@@ -5,20 +5,20 @@
       <router-view></router-view>
     </v-content>
     <timer 
-         starttime="Dec 22, 2019 00:00:01" 
-         endtime="Dec 24, 2019 10:10:00" 
+         starttime="jan 7, 2020 00:00:01" 
+         endtime="jan 8, 2020 10:10:00" 
          trans='{  
-         "day":"Day",
-         "hours":"Hours",
-         "minutes":"Minutes",
-         "seconds":"Seconds",
-         "expired":"Event has been expired.",
-         "running":"Till the end of event.",
-         "upcoming":"Till start of event.",
+         "day":"Dagen",
+         "hours":"Uren",
+         "minutes":"Minuten",
+         "seconds":"Secondes",
+         "expired":"Het weekend is voorbij.",
+         "running":"Tot het weekend eindigt.",
+         "upcoming":"Tot het start van het weekend.",
          "status": {
-            "expired":"Expired",
-            "running":"Running",
-            "upcoming":"Future"
+            "expired":"Verlopen",
+            "running":"Bezig",
+            "upcoming":"Toekomst"
            }}'>
     </timer>
   </v-app>

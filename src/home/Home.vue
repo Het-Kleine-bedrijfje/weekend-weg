@@ -3,13 +3,12 @@
     <v-row align="center" class="d-block d-md-flex">
       <v-col>
         <P>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          tincidunt pulvinar mollis. Duis suscipit interdum mauris, eu mollis
-          metus consectetur quis. Phasellus euismod, lacus ac tincidunt
-          pharetra, arcu lacus pharetra tellus, in finibus orci elit nec nisi.
-          Integer eu volutpat nisl. Vestibulum sagittis cursus leo quis mollis.
-          Fusce lobortis finibus odio, ac dictum mauris. Praesent tortor orci,
-          ultrices eu cursus at, rutrum at tortor.
+          Het is weer zover ons jaarlijks weekend weg met elkaar. 
+          Ieder jaar proberen we elkaar weer te verrassen met unieke tripjes 
+          naar plekken waar niemand van ons is geweest. 
+          Waar we dit jaar naartoe gaan is nog een verassing, maar verscheidene
+          tips zullen volgen op deze site. Daarnaast kan je ook aangeven waar je
+          niet naar toe wil, zodat de organisatie daar rekening mee kan houden.
         </P>
       </v-col>
       <v-col>

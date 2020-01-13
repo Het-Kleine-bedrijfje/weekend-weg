@@ -17,8 +17,9 @@
         <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
       </router-link>
       <v-spacer class="hidden-sm-and-down"></v-spacer>
-      <v-btn class="hidden-sm-and-down" :to="{ name:'CitySelector' }">Cities</v-btn>
-      <v-btn class="hidden-sm-and-down" :to="{ name:'CitiesPictures' }">Pictures</v-btn>
+      <v-btn class="hidden-sm-and-down" :to="{ name:'CitySelector' }">Steden</v-btn>
+      <v-btn class="hidden-sm-and-down" :to="{ name:'CitiesPictures' }">Foto's</v-btn>
+      <v-btn class="hidden-sm-and-down" :to="{ name:'Tips' }">Tips</v-btn>
     </v-app-bar>
   </span>
 </template>
@@ -30,7 +31,20 @@ export default {
     return {
       appTitle: "Weekend weg",
       drawer: false,
-      items: [{ title: "Cities", path: "/locations" }, { title: "CitiesPictures", path: "/pictures" }]
+      items: [
+        { 
+          title: "Steden", 
+          path: "/locaties" 
+        }, 
+        { 
+          title: "Fotos", 
+          path: "/fotos" 
+        }, 
+        { 
+          title: "Tips", 
+          path: "/tips"
+        }
+      ]
     };
   }
 };
