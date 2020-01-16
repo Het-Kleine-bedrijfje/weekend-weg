@@ -41,7 +41,6 @@ export default {
       if (stad == "") {
         alert("Vul een stadsnaam in!");
       } else {
-        this.$store.commit("AddNewCity", stad);
         return (this.nieuweStad = "");
       }
     },
