@@ -1,10 +1,9 @@
 <template>
-  <v-container>   
+  <v-container>
     <v-row class="voeg-toe-form" dark>
       <v-text-field v-model="nieuweStad" label="Stadsnaam"></v-text-field>
       <v-btn dark bottom @click="CheckArray(nieuweStad)">Toevoegen</v-btn>
     </v-row>
-
     <v-row align="center" class="d-md-flex">
       <v-list width="500px">
         <template v-for="(stad, index) in steden">
@@ -19,25 +18,22 @@
 </template>
 
 <script>
-import { db } from "firebase";
+import { locatieCol } from "../firebase/db";
 
 export default {
   name: "CitySelector",
   data() {
     return {
       nieuweStad: "",
-      stedenLijst: []
+      steden: []
     };
   },
-    firestore() {
-    return {
-      stedenVanDB: db.collection("locaties").doc("Gz0HdOZsTj0OrqwYJ0VN")
-    }
-  },
+  /* eslint-disable no-console */
   computed: {
-    steden() {
-      return this.stedenVanDB;
-    }
+
+  },
+  firestore: {
+    steden: locatieCol
   },
   methods: {
     AddCity(stad) {
@@ -49,11 +45,8 @@ export default {
         return (this.nieuweStad = "");
       }
     },
-    /* eslint-disable no-console */
     CheckArray(checkStad) {
-      var stad =
-        checkStad.charAt(0).toUpperCase() + checkStad.slice(1)
-
+      var stad = checkStad.charAt(0).toUpperCase() + checkStad.slice(1);
       const stedenLijst = this.$store.state.steden;
       if (stedenLijst.includes(stad)) {
         alert(stad + " zit al in deze lijst!");

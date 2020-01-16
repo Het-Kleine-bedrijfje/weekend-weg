@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { db } from "firebase";
+//import { db } from "../firebase/db";
 
 Vue.use(Vuex);
 
@@ -16,10 +16,6 @@ export default new Vuex.Store({
       state.steden.splice(index, 1);
     }
   },
-  actions: {
-    fetchCitiesFromDB() {
-      db.collection('locaties').get()
-    }
-  },
-  modules: {}
+  actions: {},
+  modules: {},
 });
