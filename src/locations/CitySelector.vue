@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import { db } from "firebase";
+
 export default {
   name: "CitySelector",
   data() {
@@ -27,9 +29,14 @@ export default {
       stedenLijst: []
     };
   },
+    firestore() {
+    return {
+      stedenVanDB: db.collection("locaties").doc("Gz0HdOZsTj0OrqwYJ0VN")
+    }
+  },
   computed: {
     steden() {
-      return this.$store.state.steden;
+      return this.stedenVanDB;
     }
   },
   methods: {
