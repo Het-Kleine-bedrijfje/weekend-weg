@@ -41,6 +41,7 @@ export default {
       if (stad == "") {
         alert("Vul een stadsnaam in!");
       } else {
+        // voeg locatie toe aan firestore
         return (this.nieuweStad = "");
       }
     },
@@ -54,7 +55,7 @@ export default {
       }
     },
     DeleteItem(index) {
-      this.$store.commit("DeleteItem", index);
+      // delete locatie uit firestor
     }
     /* eslint-enable no-console */
   }
