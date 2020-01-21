@@ -37,7 +37,7 @@ export default {
           path: "/locaties" 
         }, 
         { 
-          title: "Fotos", 
+          title: "Foto's", 
           path: "/fotos" 
         }, 
         { 

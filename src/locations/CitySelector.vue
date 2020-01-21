@@ -1,11 +1,12 @@
 <template>
   <v-container>
-    <v-row class="voeg-toe-form" dark>
+    <v-row align="center">
       <v-text-field v-model="nieuweStad" label="Stadsnaam"></v-text-field>
       <v-btn dark bottom @click="AddCity(nieuweStad)">Toevoegen</v-btn>
     </v-row>
-    <v-row align="center" class="d-md-flex">
-      <v-list width="500px">
+    <v-row align="center" class="d-block d-sm-flex">
+      <v-col>
+      <v-list>
         <template v-for="(stad, index) in steden">
           <v-list-item class="steden-lijst-item" :key="index">
             <v-list-item-content>{{ stad.id }}</v-list-item-content>
@@ -13,6 +14,12 @@
           </v-list-item>
         </template>
       </v-list>
+      </v-col>
+      <v-col>
+      <p>
+        Vul hier in naar welke stad je NIET wil gaan, zodat de organisatie daar rekening mee kan houden!
+      </p>
+      </v-col>
     </v-row>
   </v-container>
 </template>

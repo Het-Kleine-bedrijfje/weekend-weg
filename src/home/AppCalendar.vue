@@ -16,7 +16,7 @@
         ref="calendar"
         v-model="focus"
         :type="type"
-        :now="today"
+        :now="events-start"
         color="primary"
         :event-color="getEventColor"
         :events="events"
@@ -30,7 +30,7 @@
 export default {
   data: () => ({
     today: null,
-    focus: null,
+    focus: '2020-09-03',
     type: "month",
     start: null,
     end: null,
@@ -39,9 +39,9 @@ export default {
     selectedOpen: false,
     events: [
       {
-        name: "Weekend van Plezier",
-        start: "2019-12-01",
-        end: "2019-12-15",
+        name: "Weekend weg",
+        start: "2020-09-03",
+        end: "2020-09-06",
         color: "blue"
       }
     ]
@@ -86,7 +86,10 @@ export default {
       return d > 3 && d < 21
         ? "th"
         : ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"][d % 10];
-    }
+    },
+     setToday () {
+        this.focus = this.today
+    },
   }
 };
 </script>

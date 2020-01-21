@@ -5,8 +5,8 @@
       <router-view></router-view>
     </v-content>
     <timer 
-         starttime="jan 7, 2020 00:00:01" 
-         endtime="jan 8, 2020 10:10:00" 
+         starttime="sep 3, 2020 00:00:01" 
+         endtime="sep 6, 2020 10:10:00" 
          trans='{  
          "day":"Dagen",
          "hours":"Uren",
