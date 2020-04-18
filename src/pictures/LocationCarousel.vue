@@ -40,9 +40,9 @@ export default {
           src: "http://source.unsplash.com/QsAAKQcPfsc"
         },
         {
-          name: "?????",
+          name: "Annemieke's Boederij",
           year: "2020",
-          src: "http://source.unsplash.com/i--IN3cvEjg"
+          src: "../assets/deTrijeRoeden.jpg"
         }
       ]
     };

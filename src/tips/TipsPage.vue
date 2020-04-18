@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <p class="tips-text">
-            De eerste aanwijzingen zullen binnenkort volgen!
+            Iedereen houdt van deze vrouw en haar locatie die ze open heeft gesteld voor ons!
         </p>
     </v-container>
 </template>

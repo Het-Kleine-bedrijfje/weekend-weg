@@ -40,8 +40,8 @@ export default {
     events: [
       {
         name: "Weekend weg",
-        start: "2020-09-03",
-        end: "2020-09-06",
+        start: "2020-07-31",
+        end: "2020-08-02",
         color: "blue"
       }
     ]
