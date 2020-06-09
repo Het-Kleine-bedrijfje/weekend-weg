@@ -42,7 +42,7 @@ export default {
         {
           name: "Annemieke's Boederij",
           year: "2020",
-          src: "../assets/deTrijeRoeden.jpg"
+          src: "../../assets/deTrijeRoeden.jpg"
         }
       ]
     };

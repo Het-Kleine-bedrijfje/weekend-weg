@@ -30,7 +30,7 @@
 export default {
   data: () => ({
     today: null,
-    focus: '2020-09-03',
+    focus: '2020-07-31',
     type: "month",
     start: null,
     end: null,
